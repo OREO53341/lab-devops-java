@@ -1,10 +1,13 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MainTest {
     @Test
-    public void testSilly() {
-        // Un test tout simple qui réussit toujours pour valider le TP
-        assertTrue(true);
+    public void testMain() {
+        // On crée un tableau de chaînes vide pour les arguments
+        String[] args = {};
+        
+        // On appelle explicitement la méthode main de la classe Main
+        // Cela va forcer JaCoCo à traverser le code de Main.java !
+        Main.main(args);
     }
 }
