@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Package du projet et déploiement fictif...'
+                echo 'Package du projet et déploiement fictif1...'
                 sh 'mvn package -DskipTests' 
             }
         }
