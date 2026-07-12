@@ -18,5 +18,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Package du projet et déploiement fictif...'
+                // Génère le livrable (ex: un fichier .jar dans le dossier target)
+                sh 'mvn package -DskipTests' 
+            }
+        }
     }
 }
